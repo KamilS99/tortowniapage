@@ -1,0 +1,66 @@
+@use './colors' as c;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    // font-family: 'Courgette', cursive;
+	font-family: 'Dosis', sans-serif;
+    font-size: 62.5%;
+}
+.hamburger {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+}
+.nav-desktop {
+    display: none;
+}
+.nav-mobile {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-102%, 0);
+    background-image: linear-gradient(315deg, rgba(96,175,175,1) 0%, rgba(102,191,191,1) 50%, rgba(35,247,249,1) 100%);
+    transition: transform .3s;
+ 
+    &--active {
+        transform: translate(0, 0);
+    }
+    &__list {
+        list-style: none;
+        padding: 2em 0;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 3rem;
+        position: relative;
+        &:hover::before{
+            transform: scale(1);
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 3px;
+            left: -20px;
+            background-color: c.$p-color;
+            transform: scale(0);
+            transition: transform .3s;
+        }
+    }
+}
+.header {
+    position: relative;
+    height: 100%;
+}

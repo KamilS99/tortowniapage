@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 62.5%;
+}
+
+.hamburger {
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.nav-mobile {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-102%, 0);
+  background-image: linear-gradient(315deg, rgb(96, 175, 175) 0%, rgb(102, 191, 191) 50%, rgb(35, 247, 249) 100%);
+  transition: transform 0.3s;
+}
+.nav-mobile--active {
+  transform: translate(0, 0);
+}
+.nav-mobile__list {
+  list-style: none;
+  padding: 2em 0;
+}
+.nav-mobile__link {
+  text-decoration: none;
+  font-size: 3rem;
+  position: relative;
+}
+.nav-mobile__link:hover::before {
+  transform: scale(1);
+}
+.nav-mobile__link::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 3px;
+  left: -20px;
+  background-color: #551A8B;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.header {
+  position: relative;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */
