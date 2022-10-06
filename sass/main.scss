@@ -99,16 +99,16 @@ body {
 		background-color: c.$maincolor1;
 		z-index: 2;
 		&-title {
-			font-family: 'Courgette', 'Quicksand', 'sans-serif';
-			font-size: 2.1rem;
+			font-family: 'Courgette', 'Quicksand';
+			font-size: 1.8rem;
 		}
 		&-paragraph {
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 		&-cta {
 			display: block;
 			position: relative;
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 			font-weight: bold;
 			text-decoration: none;
 			color: c.$white;
@@ -472,10 +472,10 @@ body {
 @media (min-width: 350px) {
 	.header {
 		&__content-title {
-			font-size: 3.6rem;
+			font-size: 3.2rem;
 		}
 		&__content-paragraph {
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 		}
 		&__content-cta {
 			font-size: 1.6rem;

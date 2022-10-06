@@ -101,16 +101,16 @@ body {
   z-index: 2;
 }
 .header__content-title {
-  font-family: "Courgette", "Quicksand", "sans-serif";
-  font-size: 2.1rem;
+  font-family: "Courgette", "Quicksand";
+  font-size: 1.8rem;
 }
 .header__content-paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .header__content-cta {
   display: block;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -468,10 +468,10 @@ body {
 
 @media (min-width: 350px) {
   .header__content-title {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
   .header__content-paragraph {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .header__content-cta {
     font-size: 1.6rem;
