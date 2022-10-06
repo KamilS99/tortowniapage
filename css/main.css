@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 62.5%;
   background-color: #66bfbf;
   color: rgb(78, 23, 66);
@@ -101,7 +101,7 @@ body {
   z-index: 2;
 }
 .header__content-title {
-  font-family: "Courgette", cursive;
+  font-family: "Courgette", "Quicksand", "sans-serif";
   font-size: 2.1rem;
 }
 .header__content-paragraph {
@@ -311,7 +311,7 @@ body {
   text-align: center;
 }
 .offer__title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5em;
 }
 .offer__description {
@@ -347,7 +347,6 @@ body {
   margin-bottom: 2em;
 }
 .prices__box {
-  font-family: Cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,6 +366,7 @@ body {
 .gallery__paragraph-a {
   position: relative;
   text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .gallery__paragraph-a:hover::before {
   transform: scaleX(1);
@@ -377,7 +377,7 @@ body {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: rgb(78, 23, 66);
+  background-color: rgb(255, 255, 255);
   transform: scaleX(0);
   transition: transform 0.3s;
 }
@@ -393,9 +393,6 @@ body {
   flex-wrap: wrap;
 }
 
-.contact {
-  font-family: cursive;
-}
 .contact__section-title {
   color: rgb(255, 255, 255);
   z-index: 10;
@@ -548,23 +545,26 @@ body {
   }
 }
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 2em;
+  }
   .nav-desktop {
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 85px;
+    height: 75px;
     background-color: rgba(212, 228, 228, 0.9);
     z-index: 500;
     justify-content: center;
     align-items: center;
   }
   .nav-desktop__img {
-    width: 75px;
+    width: 65px;
   }
   .nav-desktop__list-item {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .nav-desktop__links {
     width: 70%;
@@ -623,6 +623,11 @@ body {
 @media (min-width: 1200px) {
   .gallery__img {
     width: 30%;
+  }
+}
+@media (min-width: 576px) and (max-width: 668px) {
+  .offer__box {
+    height: 680px;
   }
 }
 /* ----------------------------------------------

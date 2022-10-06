@@ -11,7 +11,7 @@ html {
 }
 body {
 	// font-family: 'Courgette', cursive;
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 62.5%;
 	background-color: c.$maincolor1;
 	color: c.$font-logo;
@@ -99,7 +99,7 @@ body {
 		background-color: c.$maincolor1;
 		z-index: 2;
 		&-title {
-			font-family: 'Courgette', cursive;
+			font-family: 'Courgette', 'Quicksand', 'sans-serif';
 			font-size: 2.1rem;
 		}
 		&-paragraph {
@@ -305,7 +305,7 @@ body {
 		// padding-bottom: 5em;
 	}
 	&__title {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		margin-bottom: 0.5em;
 	}
 	&__description {
@@ -343,7 +343,7 @@ body {
 		margin-bottom: 2em;
 	}
 	&__box {
-		font-family: Cursive;
+		// font-family: Cursive;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -364,6 +364,7 @@ body {
 		&-a {
 			position: relative;
 			text-decoration: none;
+			color: c.$white;
 			&:hover::before {
 				transform: scaleX(1);
 			}
@@ -373,7 +374,7 @@ body {
 				content: '';
 				width: 100%;
 				height: 2px;
-				background-color: c.$font-logo;
+				background-color: c.$white;
 				transform: scaleX(0);
 				transition: transform 0.3s;
 			}
@@ -393,7 +394,7 @@ body {
 }
 //CONTACT
 .contact {
-	font-family: cursive;
+	// font-family: cursive;
 	&__section-title {
 		color: c.$white;
 		z-index: 10;
@@ -569,22 +570,25 @@ body {
 	}
 }
 @media (min-width: 992px) {
+	html {
+		scroll-padding-top: 2em;
+	}
 	.nav-desktop {
 		display: flex;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		height: 85px;
+		height: 75px;
 		background-color: c.$grey;
 		z-index: 500;
 		justify-content: center;
 		align-items: center;
 		&__img {
-			width: 75px;
+			width: 65px;
 		}
 		&__list-item {
 			display: inline-block;
-			padding: 0 30px;
+			padding: 0 15px;
 		}
 		&__links {
 			width: 70%;
@@ -653,6 +657,13 @@ body {
 	.gallery {
 		&__img {
 			width: 30%;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 668px) {
+	.offer {
+		&__box {
+			height: 680px;
 		}
 	}
 }
