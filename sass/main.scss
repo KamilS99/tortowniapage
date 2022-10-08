@@ -667,9 +667,10 @@ body {
 		}
 	}
 }
-@media (min-height: 400px) and (max-height: 620px) {
+@media (max-height: 500px) {
 	.header__content {
 		height: 75vh;
+		justify-content: flex-start;
 	}
 }
 
