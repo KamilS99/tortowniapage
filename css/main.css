@@ -240,6 +240,9 @@ body {
   display: block;
   font-size: 1rem;
 }
+.reviews-box .review-box .review-content--lowerfz {
+  font-size: 0.8rem;
+}
 
 .source {
   text-align: center;
@@ -315,6 +318,9 @@ body {
 }
 .offer__description {
   font-size: 1rem;
+}
+.offer__description--lowerfz {
+  font-size: 0.9rem;
 }
 
 .prices__product-type {
@@ -407,7 +413,7 @@ body {
   z-index: 10;
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   padding: 1em 4em;
@@ -431,9 +437,11 @@ body {
 }
 .contact__company {
   font-size: 1.4rem;
+  margin: 0.3em 0;
 }
 .contact__data {
   font-size: 1.2rem;
+  margin: 0.2em 0.5em;
 }
 .contact__data-icon {
   width: 40px;
@@ -485,6 +493,9 @@ body {
   .contact__data {
     font-size: 1.4rem;
   }
+  .reviews-box .review-box .review-content--lowerfz {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 576px) {
   .header__content-title {
@@ -508,9 +519,6 @@ body {
   }
 }
 @media (min-width: 600px) {
-  .offer__description--lowerfz {
-    font-size: 0.9rem;
-  }
   .offer__box {
     width: 45%;
   }
@@ -554,6 +562,9 @@ body {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 2em;
+  }
+  .contact__content-text {
+    justify-content: center;
   }
   .nav-desktop {
     display: flex;
@@ -628,6 +639,11 @@ body {
   }
   .gallery__img {
     width: 30%;
+  }
+}
+@media (min-width: 576px) and (max-width: 668px) {
+  .offer__box {
+    height: 680px;
   }
 }
 /* ----------------------------------------------
