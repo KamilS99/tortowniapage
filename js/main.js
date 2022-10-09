@@ -30,8 +30,6 @@ const clickOutsideAccordion = e => {
 		closeAccordionItems()
 	}
 }
-accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
-window.addEventListener('click', clickOutsideAccordion)
 //THROTTLING
 const throttle = (fn, delay) => {
 	let last = 0
@@ -99,5 +97,7 @@ sortCakesBtn.addEventListener('click', sortCakes)
 sortPiesBtn.addEventListener('click', sortPies)
 navMobileLinks.forEach(link => link.addEventListener('click', handleNavMobile))
 hamburger.addEventListener('click', handleNavMobile)
-
 window.addEventListener('resize', throttle(closeNavWhenResize, 200))
+//ACCORDION
+accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
+window.addEventListener('click', clickOutsideAccordion)

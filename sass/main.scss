@@ -113,6 +113,13 @@ body {
 			text-decoration: none;
 			color: c.$white;
 			animation: heartbeat 6s ease-in-out infinite both;
+			transition: color 0.3s;
+			&:hover {
+				color: c.$bestseller-bg;
+			}
+			&-desktop {
+				display: none;
+			}
 			&-callicon {
 				width: 14px;
 				height: 14px;
@@ -203,7 +210,6 @@ body {
 			color: c.$white;
 			outline: none;
 		}
-
 	}
 	&__accordion-info {
 		padding: 1em 2em;
@@ -325,8 +331,12 @@ body {
 		width: 100%;
 		box-shadow: 3px 3px 15px black;
 		transition: transform 0.3s;
+		overflow: hidden;
 		&:hover {
 			transform: scale(0.95);
+		}
+		&--bestseller {
+			background-color: c.$bestseller-bg;
 		}
 	}
 	&__img {
@@ -357,6 +367,27 @@ body {
 	}
 	&__description--lowerfz {
 		font-size: 0.9rem;
+	}
+	&__bestseller {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		background-color: red;
+		z-index: 10;
+		width: 300px;
+		height: 40px;
+		transform: rotate(45deg);
+		right: -60px;
+		top: 60px;
+		color: c.$white;
+		&-p {
+			display: block;
+			text-transform: uppercase;
+			color: c.$white;
+			position: absolute;
+			font-size: 1.4rem;
+		}
 	}
 }
 //PRICES
@@ -698,6 +729,12 @@ body {
 			grid-row: 1/-1;
 			grid-column: 2/3;
 		}
+		&__content-cta-mobile {
+			display: none;
+		}
+		&__content-cta-desktop {
+			display: block;
+		}
 	}
 	.offer {
 		&__box {
@@ -732,6 +769,26 @@ body {
 	.offer {
 		&__box {
 			height: 680px;
+		}
+	}
+}
+@media (min-height: 700px) {
+	.contact {
+		&__content-text {
+			justify-content: center;
+		}
+	}
+}
+@media (max-height: 480px) {
+	.header {
+		&__content-title {
+			font-size: 3.2rem;
+		}
+		&__content-paragraph {
+			font-size: 1.2rem;
+		}
+		&__content-cta {
+			font-size: 1.6rem;
 		}
 	}
 }
