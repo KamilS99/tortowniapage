@@ -189,6 +189,9 @@ body {
 .aboutus__accordion-box {
   margin: 20px;
 }
+.aboutus__accordion-box:last-child {
+  margin-bottom: 5em;
+}
 .aboutus__accordion-btn {
   padding: 1em 2em;
   width: 100%;
@@ -197,6 +200,8 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+  color: rgb(78, 23, 66);
+  font-size: 1.2rem;
 }
 .aboutus__accordion-btn:hover, .aboutus__accordion-btn:focus {
   background-color: rgb(78, 23, 66);
