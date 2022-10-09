@@ -167,8 +167,8 @@ body {
 }
 .aboutus__ceo-img {
   background-image: url(../img/ceo.jpg);
-  width: 225px;
-  height: 225px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   border: 3px solid rgb(78, 23, 66);
   background-position: center;
