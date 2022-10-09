@@ -7,6 +7,33 @@ const sortAllBtn = document.querySelector('.offer__sort-btn-all')
 const sortCakesBtn = document.querySelector('.offer__sort-btn-cakes')
 const sortPiesBtn = document.querySelector('.offer__sort-btn-pies')
 const footerYear = document.querySelector('.footer__year')
+//ACCORDION
+const accordion = document.querySelector('.aboutus__accordion')
+const accordionBtns = document.querySelectorAll('.aboutus__accordion-btn')
+
+function openAccordionItems() {
+	if(this.nextElementSibling.classList.contains('aboutus__accordion-info--active')) {
+		this.nextElementSibling.classList.remove('aboutus__accordion-info--active')
+	}
+	else {
+		closeAccordionItems()
+		this.nextElementSibling.classList.toggle('aboutus__accordion-info--active')
+	}
+}
+const closeAccordionItems = () => {
+	const allActiveItems = document.querySelectorAll('.aboutus__accordion-info--active')
+	allActiveItems.forEach(item => item.classList.remove('aboutus__accordion-info--active'))
+}
+const clickOutsideAccordion = e => {
+	 if (e.target.classList.contains('aboutus__accordion-btn')) {
+		return
+	 }
+	 else {
+		closeAccordionItems()
+	 }
+}
+accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
+window.addEventListener('click', clickOutsideAccordion)
 //THROTTLING
 const throttle = (fn, delay) => {
 	let last = 0
@@ -53,7 +80,7 @@ const sortPies = () => {
 	sortPiesBtn.classList.add('offer__sort-btn--active')
 	sortAllBtn.classList.remove('offer__sort-btn--active')
 }
-//CURRENT YEAR FOR FOOTER 
+//CURRENT YEAR FOR FOOTER
 const year = new Date().getFullYear()
 footerYear.textContent = year
 
@@ -75,7 +102,4 @@ sortPiesBtn.addEventListener('click', sortPies)
 navMobileLinks.forEach(link => link.addEventListener('click', handleNavMobile))
 hamburger.addEventListener('click', handleNavMobile)
 
-window.addEventListener(
-	'resize',
-	throttle(closeNavWhenResize, 200)
-)
+window.addEventListener('resize', throttle(closeNavWhenResize, 200))
