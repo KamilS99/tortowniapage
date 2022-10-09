@@ -183,6 +183,9 @@ body {
 	}
 	&__accordion-box {
 		margin: 20px;
+		&:last-child {
+			margin-bottom: 5em;
+		}
 	}
 	&__accordion-btn {
 		padding: 1em 2em;
@@ -192,12 +195,15 @@ body {
 		border-radius: 8px;
 		cursor: pointer;
 		transition: background-color 0.3s;
+		color: c.$font-logo;
+		font-size: 1.2rem;
 		&:hover,
 		&:focus {
 			background-color: c.$font-logo;
 			color: c.$white;
 			outline: none;
 		}
+
 	}
 	&__accordion-info {
 		padding: 1em 2em;
