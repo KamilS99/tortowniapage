@@ -162,8 +162,8 @@ body {
 	}
 	&__ceo-img {
 		background-image: url(../img/ceo.jpg);
-		width: 175px;
-		height: 175px;
+		width: 160px;
+		height: 160px;
 		border-radius: 50%;
 		border: 3px solid c.$font-logo;
 		background-position: center;
@@ -664,6 +664,10 @@ body {
 		}
 	}
 	.aboutus {
+		&__ceo-img {
+			width: 175px;
+			height: 175px;
+		}
 		&__accordion-btn {
 			font-size: 1.4rem;
 		}
