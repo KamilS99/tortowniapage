@@ -12,10 +12,9 @@ const accordion = document.querySelector('.aboutus__accordion')
 const accordionBtns = document.querySelectorAll('.aboutus__accordion-btn')
 
 function openAccordionItems() {
-	if(this.nextElementSibling.classList.contains('aboutus__accordion-info--active')) {
+	if (this.nextElementSibling.classList.contains('aboutus__accordion-info--active')) {
 		this.nextElementSibling.classList.remove('aboutus__accordion-info--active')
-	}
-	else {
+	} else {
 		closeAccordionItems()
 		this.nextElementSibling.classList.toggle('aboutus__accordion-info--active')
 	}
@@ -25,12 +24,11 @@ const closeAccordionItems = () => {
 	allActiveItems.forEach(item => item.classList.remove('aboutus__accordion-info--active'))
 }
 const clickOutsideAccordion = e => {
-	 if (e.target.classList.contains('aboutus__accordion-btn')) {
+	if (e.target.classList.contains('aboutus__accordion-btn')) {
 		return
-	 }
-	 else {
+	} else {
 		closeAccordionItems()
-	 }
+	}
 }
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
 window.addEventListener('click', clickOutsideAccordion)

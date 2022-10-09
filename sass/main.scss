@@ -191,8 +191,9 @@ body {
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
-		transition: background-color .3s;
-		&:hover, &:focus {
+		transition: background-color 0.3s;
+		&:hover,
+		&:focus {
 			background-color: c.$font-logo;
 			color: c.$white;
 			outline: none;
