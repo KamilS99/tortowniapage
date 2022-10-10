@@ -152,6 +152,7 @@ body {
 .section-darker {
 	background-color: c.$maincolor2;
 }
+
 //ABOUTUS
 .aboutus {
 	background-color: c.$maincolor2;
@@ -374,7 +375,7 @@ body {
 		align-items: center;
 		position: absolute;
 		background-color: red;
-		z-index: 10;
+		z-index: 5;
 		width: 300px;
 		height: 40px;
 		transform: rotate(45deg);
@@ -392,6 +393,15 @@ body {
 }
 //PRICES
 .prices {
+	&__p {
+		text-align: center;
+		font-size: 1.2rem;
+		margin-bottom: 0.5em;
+		color: c.$font-logo;
+		&-margin {
+			margin-bottom: 2em;
+		}
+	}
 	&__product-type {
 		font-size: 2.1rem;
 		margin-bottom: 1em;
