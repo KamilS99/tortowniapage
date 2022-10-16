@@ -255,9 +255,10 @@ body {
 	flex-wrap: wrap;
 	.review-box {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		flex-direction: column;
+		gap: 2em;
 		width: 350px;
 		height: 400px;
 		background-color: #fff;
@@ -273,8 +274,7 @@ body {
 		}
 		.review-author {
 			display: block;
-			position: absolute;
-			top: 10%;
+			margin-top: 2em;
 			font-size: 1.4rem;
 			margin-bottom: 1em;
 		}
