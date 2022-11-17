@@ -14,7 +14,7 @@ $('.reviews-box').slick({
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
 
         }
       },
@@ -22,7 +22,7 @@ $('.reviews-box').slick({
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       },
       {
