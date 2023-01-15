@@ -369,6 +369,27 @@ body {
 	&__description--lowerfz {
 		font-size: 0.9rem;
 	}
+	&__news {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		background-color: rgb(23, 7, 253);
+		z-index: 5;
+		width: 300px;
+		height: 40px;
+		transform: rotate(45deg);
+		right: -60px;
+		top: 60px;
+		color: c.$white;
+		&-p {
+			display: block;
+			text-transform: uppercase;
+			color: c.$white;
+			position: absolute;
+			font-size: 1.4rem;
+		}
+	}
 	&__bestseller {
 		display: flex;
 		justify-content: center;
